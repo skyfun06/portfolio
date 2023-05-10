@@ -273,28 +273,25 @@ footer{
 
 footer > div > a{
     text-decoration: none;
-    color: #ffffff
+    color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    transition: all 0.2s linear;
 }
 
 footer > div > a:hover{
     color: #858585;
+    border-color: #858585;
 }
 
 footer > div > a > svg{ 
-    border-radius: 50%;
     width: 20px;
     height: 20px; 
-    border: 1px solid #ffffff;
-    margin: 3px;
-    padding: 3px 3px;
-    transition: all 0.2s linear;
+    padding: 7px; 
 }
-
-footer > div > a > svg:hover{
-    border-color: #858585;
-} 
 
 footer > p{
     margin-top: 7px;
     color: #636363;
+    font-size: 16px;
 }
