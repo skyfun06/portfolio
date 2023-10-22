@@ -1,0 +1,585 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 50px 150px;
+    background-color: #1e252b;
+    
+}
+
+main > div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+main > div:first-child > img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+main > div:first-child > a{
+    color: #767d84;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main > div:nth-child(2){
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+main > div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 100px 0px;
+}
+
+main > div:nth-child(2) > div > p:first-child{
+    color: #d0ccc6;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+main > div:nth-child(2) > div > p > span{
+    color: #ff6e30;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+main > div:nth-child(2) > div > p{
+    max-width: 1100px;
+    color: #767d84;
+    font-size: 20px; 
+    font-weight: 400;
+    padding: 20px 0px;
+    user-select: none;
+}
+
+main > div:nth-child(2) > div > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+    padding-top: 20px;
+}
+
+main > div:nth-child(2) > div > div > a{
+    border: none;
+    border-radius: calc(30px + 1.2rem);
+    padding: 15px 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Poppins,sans-serif;
+    font-weight: 600;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px #0c0c0c26;
+    background-color: #ff6e30;
+    color: #d0ccc6;
+    transition: .3s all;
+}
+
+main > div:nth-child(2) > div > div > a:hover{
+    transform: scale(1.05);
+}
+
+main > div:nth-child(2) > div > div > a:nth-child(2){
+    background-color: #1f2123;
+}
+
+#firstwave{
+    background-color: #ff6e30;
+    fill: #1e252b;
+    box-shadow: none;
+}
+
+#mastery{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff6e30;
+}
+
+#mastery > div{
+    width: 1200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1e252b;
+    border-radius: 12px;
+    box-shadow: 0 0 50px #0c0c0c;
+    border: 1px solid #767d84;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#mastery > div > div{
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 50px;
+    padding: 100px 50px 50px 50px;
+}
+
+#mastery > div > div > div{
+    width: 80px;
+    height: 80px;
+    background-color: #ff6e30;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mastery > div > div > div > svg{
+    fill: #fff;
+}
+
+#mastery > div > div > p:nth-child(2){
+    color: #d0ccc6;
+    font-size: 22px;
+    font-weight: 600;
+    user-select: none;
+}
+
+#mastery > div > div > p:nth-child(3){
+    text-align: center;
+    color: #767d84;
+    font-size: 16px;
+    font-weight: 400;
+    user-select: none;
+}
+
+#mastery > div > div > p:nth-child(4){
+    color: #ff6e30;
+    font-size: 18px;
+    font-weight: 600;
+    user-select: none;
+}
+
+#mastery > div > div > p:nth-child(5){
+    margin-top: 10px;
+    color: #d0ccc6;
+    font-size: 14px;
+    font-weight: 600;
+    user-select: none;
+}
+
+#mastery > div > div:nth-child(2){
+    border-left: 1px solid #767d84;
+    border-right: 1px solid #767d84;
+}
+
+#secondwave{
+    fill: #ff6e30;
+    background-color: #1f2123;
+}
+
+#project{
+    height: 110vh;
+    width: 100%;
+
+    background-color: #1f2123;
+}
+
+#project > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    padding: 10px 50px;
+}
+
+#project > div > p{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    user-select: none;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#project > div > div{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+    gap: 50px;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#project > div > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+    padding: 50px 30px;
+    background-color: #191a1b;
+    box-shadow: 0 0 15px #0c0c0c;
+    transition: all 0.3s;
+}
+
+#project > div > div > div:hover{
+    transform: scale(1.05);
+}
+
+#project > div > div > div > p:first-child{
+    color: #d0ccc6;
+    font-size: 22px;
+    font-weight: 600;
+    user-select: none;
+}
+
+#project > div > div > div > img{
+    border-radius: 35px;
+    padding: 20px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+#project > div > div > div > p{
+    color: #767d84;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    user-select: none;
+}
+
+#project > div > div > div > a{
+    background-color: #ff6e30;
+    padding: 10px 50px;
+    border-radius: 18px;
+    box-shadow: 0 0 15px #0c0c0c;
+    border: 1px solid #191a1b;
+    color: #d0ccc6;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+#project > div > div > div > a:hover{
+    transform: scale(1.05);
+}
+
+#contact{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff6e30;
+    gap: 50px;
+    padding: 70px;
+}
+
+#contact > div{
+    width: 1200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1e252b;
+    box-shadow: 0 0 50px #0c0c0c;
+    border-radius: 18px;
+    padding: 50px 100px;
+    gap: 80px;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#contact > div > p{
+    width: 300px;
+
+    color: #d0ccc6;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    user-select: none;
+}
+
+#contact > div > p:nth-child(2){
+    border-left: 1px solid #d0ccc6;
+    border-right: 1px solid #d0ccc6;
+}
+
+#contact > div > a{
+    background-color: #1e252b;
+    border: 2px solid #ff6e30;
+    border-radius: 18px;
+    padding: 15px 50px;
+    color: #d0ccc6;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 0;
+    position: relative;
+}
+
+#contact > div > a::before{
+    content: '';
+    position: absolute;  
+    top: 30px;
+    left: 122px;
+    width: 0%;
+    height: 0%;
+    background-color: #ff6e30;
+    border-radius: 18px;
+    z-index: -1;
+    transition: all .3s;
+}
+
+#contact > div > a:hover::before{
+    width: 101%;
+    height: 101%;
+    top: -1px;
+    left: -1px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1e252b;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+footer > div > a{
+    border: 1px solid #d0ccc6;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+footer > div > a > svg{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    fill: #d0ccc6;
+    padding: 5px;
+}
+
+footer > div > a:hover{
+    background-color: #ff6e30;
+    border-color: #ff6e30;
+}
+
+footer > div > a:hover > svg{
+    fill: #fff;
+}
+
+footer > p{
+    color: #767d84;
+    user-select: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+}
+  
+@media screen and (max-width: 480px){
+    main{
+        padding: 5%;
+    }
+    main > div:last-child > div > p{
+        font-size: 18px;
+        width:350px;
+        
+    }
+    main > div:last-child > div:last-child{
+        padding: 10px 0px;
+    }
+    main > div:last-child > div > p:nth-child(2){
+        font-size: 18px;
+        height: 150px;
+    }
+    main > div:last-child > div > div:last-child > a{
+        padding: 8px 15px;
+        min-width: 130px;
+        margin-top: 110px;
+    }
+    #mastery{
+        height: 300vh;
+    }
+    #mastery > div{
+        flex-direction: column;
+        width: 80%;
+    }
+    #mastery > div > div:nth-child(2){
+        border-top: 1px solid #767d84;
+        border-bottom: 1px solid #767d84;
+        border-left: none;
+        border-right: none;
+    }
+    #mastery > div > div > p:nth-child(3){
+        width: 250px;
+    }
+    #mastery > div > div > div > svg{
+        height: 70px;
+    }
+    #project{
+        height: 145vh;
+    }
+    #project > div > p{
+        font-size: 28px;
+    }
+    #project > div > div{
+        flex-direction: column;
+    }
+    #contact > div{
+        flex-direction: column;
+        padding: 25px;
+    }
+    #contact > div > p:nth-child(2){
+        border-bottom: 1px solid #767d84;
+        border-top: 1px solid #767d84;
+        border-left: none;
+        border-right: none;
+        padding: 30px 0px;
+    }
+    footer > p{
+        width: 300px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px){
+    main{
+        padding: 5%;
+    }
+    #mastery{
+        height: 300vh;
+    }
+    #mastery > div{
+        flex-direction: column;
+        width: 80%;
+    }
+    #mastery > div > div:nth-child(2){
+        border-top: 1px solid #767d84;
+        border-bottom: 1px solid #767d84;
+        border-left: none;
+        border-right: none;
+    }
+    #mastery > div > div > p:nth-child(3){
+        width: 300px;
+    }
+    #project{
+        height: 100vh;
+    }
+    #contact > div{
+        flex-direction: column;
+        padding: 25px;
+        width: 90%;
+    }
+    #contact > div > p:nth-child(2){
+        border-bottom: 1px solid #767d84;
+        border-top: 1px solid #767d84;
+        border-left: none;
+        border-right: none;
+        padding: 30px 0px;
+    }
+}
