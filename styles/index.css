@@ -160,6 +160,7 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
 }
 
 #mastery > div > div{
+    width: 448px;
     height: 700px;
 
     display: flex;
@@ -225,14 +226,14 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
     background-color: #1f2123;
 }
 
-#project{
+#projects{
     height: 110vh;
     width: 100%;
 
     background-color: #1f2123;
 }
 
-#project > div{
+#projects > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,7 +242,7 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
     padding: 10px 50px;
 }
 
-#project > div > p{
+#projects > div > p{
     color: #fff;
     font-size: 32px;
     font-weight: 600;
@@ -249,7 +250,7 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
     animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-#project > div > div{
+#projects > div > div{
     width: 100%;
 
     display: flex;
@@ -262,7 +263,7 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-#project > div > div > div{
+#projects > div > div > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,25 +276,25 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
     transition: all 0.3s;
 }
 
-#project > div > div > div:hover{
+#projects > div > div > div:hover{
     transform: scale(1.05);
 }
 
-#project > div > div > div > p:first-child{
+#projects > div > div > div > p:first-child{
     color: #d0ccc6;
     font-size: 22px;
     font-weight: 600;
     user-select: none;
 }
 
-#project > div > div > div > img{
+#projects > div > div > div > img{
     border-radius: 35px;
     padding: 20px 0px;
     max-width: 100%;
     height: auto;
 }
 
-#project > div > div > div > p{
+#projects > div > div > div > p{
     color: #767d84;
     font-size: 18px;
     font-weight: 500;
@@ -301,7 +302,11 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
     user-select: none;
 }
 
-#project > div > div > div > a{
+#projects > div > div > div > p:nth-child(3){
+    text-align: center;
+}
+
+#projects > div > div > div > a{
     background-color: #ff6e30;
     padding: 10px 50px;
     border-radius: 18px;
@@ -313,7 +318,7 @@ main > div:nth-child(2) > div > div > a:nth-child(2){
     transition: all 0.3s;
 }
 
-#project > div > div > div > a:hover{
+#projects > div > div > div > a:hover{
     transform: scale(1.05);
 }
 
@@ -488,22 +493,21 @@ footer > p{
     main > div:last-child > div > p{
         font-size: 18px;
         width:350px;
-        
     }
     main > div:last-child > div:last-child{
         padding: 10px 0px;
     }
     main > div:last-child > div > p:nth-child(2){
-        font-size: 18px;
+        font-size: 12px;
         height: 150px;
     }
     main > div:last-child > div > div:last-child > a{
         padding: 8px 15px;
         min-width: 130px;
-        margin-top: 110px;
+       
     }
     #mastery{
-        height: 300vh;
+        height: 320vh;
     }
     #mastery > div{
         flex-direction: column;
@@ -521,13 +525,13 @@ footer > p{
     #mastery > div > div > div > svg{
         height: 70px;
     }
-    #project{
-        height: 145vh;
+    #projects{
+        height: 180vh;
     }
-    #project > div > p{
+    #projects > div > p{
         font-size: 28px;
     }
-    #project > div > div{
+    #projects > div > div{
         flex-direction: column;
     }
     #contact > div{
@@ -567,8 +571,11 @@ footer > p{
     #mastery > div > div > p:nth-child(3){
         width: 300px;
     }
-    #project{
+    #projects{
         height: 100vh;
+    }
+    #projects > div > div > div > p:nth-child(3){
+        height: 81px;
     }
     #contact > div{
         flex-direction: column;
