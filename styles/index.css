@@ -494,7 +494,7 @@ footer > p{
         padding: 5%;
     }
     main > div:last-child > div > p{
-        font-size: 18px;
+        font-size: 16px;
         width:350px;
     }
     main > div:last-child > div:last-child{
@@ -557,6 +557,22 @@ footer > p{
 @media screen and (min-width: 480px) and (max-width: 1000px){
     main{
         padding: 5%;
+    }
+    main > div:last-child > div > p{
+        font-size: 16px;
+        width:350px;
+    }
+    main > div:last-child > div:last-child{
+        padding: 10px 0px;
+    }
+    main > div:last-child > div > p:nth-child(2){
+        font-size: 12px;
+        height: 150px;
+    }
+    main > div:last-child > div > div:last-child > a{
+        padding: 8px 15px;
+        min-width: 130px;
+       
     }
     #mastery{
         height: 300vh;
